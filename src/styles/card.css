@@ -1,0 +1,46 @@
+.region {
+  padding: 1.3rem 0.4rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--pink-light);
+}
+
+.Africa,
+.Europe,
+.Oceania {
+  background-color: var(--pink-dark);
+}
+
+.region:hover .map svg {
+  transform: scale(1.1);
+}
+
+.region div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.map svg {
+  width: 90px;
+  height: 90px;
+  transition: all 0.2s ease-in-out;
+}
+
+.map svg path {
+  fill: var(--pink-darker) !important;
+}
+
+#Copyright {
+  display: none;
+}
+
+.icon {
+  width: 20px;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
