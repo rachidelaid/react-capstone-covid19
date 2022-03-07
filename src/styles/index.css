@@ -19,3 +19,8 @@ body {
   font-family: 'Lato', sans-serif;
   color: #fff;
 }
+
+svg {
+  width: 24px;
+  cursor: pointer;
+}

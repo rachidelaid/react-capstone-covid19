@@ -1,0 +1,29 @@
+.hero-wrapper {
+  height: 40vh;
+  background: url(../assets/bg.webp);
+  background-size: cover;
+}
+
+.hero {
+  height: 100%;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    var(--pink-light)
+  );
+  padding: 2rem 0.4rem;
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+
+.hero h2 {
+  font-weight: 900;
+}
+
+.hero svg {
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.4rem;
+}
