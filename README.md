@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Covid 19 Status.
 
-## Available Scripts
+web app for showing covid 19 status by country, built using ReactJS and redux.
+the list of countries is from the [restcountries API](https://restcountries.com) and the covid data is from [Narrativa](https://covid19tracking.narrativa.com).
 
-In the project directory, you can run:
+![screenshot1](./screenshot1.png)![screenshot2](./screenshot2.png)
 
-### `npm start`
+## Live Link
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In the following link, you can view the [web app](https://capstone-covid.netlify.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built With
 
-### `npm test`
+- ReactJS
+- Redux
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+start by cloning the repository.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`git clone https://github.com/rachidelaid/react-capstone-covid19.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+cd to the folder.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`cd react-capstone-covid19`
 
-### `npm run eject`
+install all the dependencies.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`npm install`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+run the live server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`npm run start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+go to [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+build the distribution folder before hosting the app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm run build`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+after the build you can host the `build` folder.
 
-### Code Splitting
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👤 **Rachid El aid**
 
-### Analyzing the Bundle Size
+- GitHub: [@rachidelaid](https://github.com/rachidelaid)
+- Twitter: [@rachidelaid1](https://twitter.com/rachidelaid1)
+- LinkedIn: [Rachid El aid](https://www.linkedin.com/in/rachid-elaid-106336203/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to check the [issues page](../../issues/).
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+I wanna thank [Ballhead](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>) from behance for the awsome design.
 
-### Deployment
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Give a ⭐️ if you like this project!
 
-### `npm run build` fails to minify
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
