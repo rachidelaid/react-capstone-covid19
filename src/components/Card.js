@@ -1,15 +1,28 @@
 import PropTypes from 'prop-types';
 import { useEffect, useRef } from 'react';
+import { useSelector } from 'react-redux';
 import '../styles/card.css';
 
-const Card = ({ name, count, action }) => {
+const Card = ({ name, action, code }) => {
+  const countries = useSelector(({ countriesReducer }) => countriesReducer);
   const map = useRef('');
+
+  const getCode = () => {
+    if (!code) {
+      return name.toLowerCase() === 'americas'
+        ? 'america'
+        : `${
+          name.toLowerCase() === 'antarctic'
+            ? 'antarctica'
+            : name.toLowerCase()
+        }`;
+    }
+
+    return code.toLowerCase();
+  };
   const getMap = async () => {
-    const resp = await fetch(
-      `https://raw.githubusercontent.com/rachidelaid/worldMaps/main/maps/${
-        name.toLowerCase() === 'americas' ? 'america' : name.toLowerCase()
-      }/vector.svg`,
-    );
+    const link = `https://raw.githubusercontent.com/rachidelaid/worldMaps/main/maps/${getCode()}/vector.svg`;
+    const resp = await fetch(link);
     const svg = await resp.text();
     map.current.innerHTML = svg;
   };
@@ -18,11 +31,19 @@ const Card = ({ name, count, action }) => {
     getMap();
   }, []);
   return (
-    <div className={`region ${name}`} key={name}>
+    <div className={`region ${!code ? name : 'country'}`} key={name}>
       <div ref={map} className="map" />
-      <div>
+      <div className="details">
         <p className="title">{name}</p>
-        <small>{`${count} countries`}</small>
+        {!code && (
+          <small>
+            {`${
+              countries.filter(
+                (c) => c.region.toLowerCase() === name.toLowerCase(),
+              ).length
+            } countries`}
+          </small>
+        )}
       </div>
       {action && (
         <svg className="icon" viewBox="0 0 24 24">
@@ -38,8 +59,8 @@ const Card = ({ name, count, action }) => {
 
 Card.propTypes = {
   name: PropTypes.string.isRequired,
-  count: PropTypes.number.isRequired,
   action: PropTypes.bool.isRequired,
+  code: PropTypes.string.isRequired,
 };
 
 export default Card;

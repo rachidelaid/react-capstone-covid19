@@ -1,10 +1,12 @@
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import '../styles/home.css';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
 
 const Home = () => {
-  const arr = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania', 'Antarctica'];
+  const countries = useSelector(({ countriesReducer }) => countriesReducer);
+  const arr = [...new Set(countries.map((c) => c.region))].sort();
 
   return (
     <div className="home">
@@ -31,7 +33,7 @@ const Home = () => {
       <div className="regions">
         {arr.map((region) => (
           <Link key={region} to={`/region/${region.toLocaleLowerCase()}`}>
-            <Card name={region} count={150} action />
+            <Card name={region} code="" action />
           </Link>
         ))}
       </div>
