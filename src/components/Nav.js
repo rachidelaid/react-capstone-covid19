@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import '../styles/nav.css';
 
-const Nav = () => (
+const Nav = ({ title }) => (
   <nav className="navbar">
     <svg viewBox="0 0 24 24">
       <path
@@ -8,7 +9,7 @@ const Nav = () => (
         d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
       />
     </svg>
-    <p>today&apos;s stats</p>
+    <p>{title}</p>
     <svg viewBox="0 0 24 24">
       <path
         fill="currentColor"
@@ -17,5 +18,9 @@ const Nav = () => (
     </svg>
   </nav>
 );
+
+Nav.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default Nav;

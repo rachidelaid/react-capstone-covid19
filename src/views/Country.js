@@ -6,6 +6,7 @@ import '../styles/country.css';
 
 import Card from '../components/Card';
 import Spinner from '../components/Spinner';
+import Nav from '../components/Nav';
 
 const Country = () => {
   const dispatch = useDispatch();
@@ -21,38 +22,49 @@ const Country = () => {
   }-${date.getDate() > 10 ? date.getDate() : `0${date.getDate()}`}`;
 
   useEffect(() => {
-    if (!covid.total) {
-      dispatch(fetchCovid(today, name));
+    if (!covid.country) {
+      dispatch(fetchCovid(today, id === 'us' ? 'US' : name));
     }
   }, []);
 
   return (
-    <div className="country-page">
-      <Card name={name} code={id} action={false} />
-      <p className="split">STATS BY COUNTRY</p>
-      {!covid.country ? (
-        <Spinner />
-      ) : (
-        <div className="list">
-          <div className="section">
-            <h4>Today Confirmed</h4>
-            <p>{covid.country.today_confirmed}</p>
+    <>
+      <Nav title={name} />
+      <div className="country-page">
+        <Card name={name} code={id} action={false} />
+        <p className="split">STATS BY COUNTRY</p>
+        {!covid.country ? (
+          <Spinner />
+        ) : (
+          <div className="list">
+            <div className="section light">
+              <h3>Today Confirmed</h3>
+              <p>{covid.country.today_confirmed}</p>
+            </div>
+            <div className="section">
+              <h3>Yesterday Confirmed</h3>
+              <p>{covid.country.yesterday_confirmed}</p>
+            </div>
+            <div className="section">
+              <h3>Today Deaths</h3>
+              <p>{covid.country.today_deaths}</p>
+            </div>
+            <div className="section light">
+              <h3>Yesterday Deaths</h3>
+              <p>{covid.country.yesterday_deaths}</p>
+            </div>
+            <div className="section light">
+              <h3>Today Recovered</h3>
+              <p>{covid.country.today_recovered}</p>
+            </div>
+            <div className="section">
+              <h3>Yesterday Recovered</h3>
+              <p>{covid.country.yesterday_recovered}</p>
+            </div>
           </div>
-          <div className="section">
-            <h4>Yesterday Confirmed</h4>
-            <p>{covid.country.yesterday_confirmed}</p>
-          </div>
-          <div className="section">
-            <h4>Today Deaths</h4>
-            <p>{covid.country.today_deaths}</p>
-          </div>
-          <div className="section">
-            <h4>Yesterday Deaths</h4>
-            <p>{covid.country.yesterday_deaths}</p>
-          </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </>
   );
 };
 
