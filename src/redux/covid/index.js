@@ -11,19 +11,22 @@ export const AddForCountry = (payload) => ({
   payload,
 });
 
-export const fetchCovid = (date, country = 'c') => (dispatch) => fetch(
-  `https://api.covid19tracking.narrativa.com/api/${date}/country/${country}`,
+export const fetchCovid = (date, country) => (dispatch) => fetch(
+  `https://api.covid19tracking.narrativa.com/api/${date}/country/${
+    country || 'c'
+  }`,
 )
   .then((response) => response.json())
   .then((data) => {
-    dispatch({
-      type: SAVE_TOTAL,
-      payload: data.total,
-    });
-    if (country !== 'c') {
+    if (country) {
       dispatch({
         type: COUNTRY_DATA,
         payload: data.dates[date].countries[country],
+      });
+    } else {
+      dispatch({
+        type: SAVE_TOTAL,
+        payload: data.total,
       });
     }
   });

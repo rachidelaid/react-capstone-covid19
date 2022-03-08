@@ -5,11 +5,12 @@ import { fetchCovid } from '../redux/covid';
 import '../styles/country.css';
 
 import Card from '../components/Card';
+import Spinner from '../components/Spinner';
 
 const Country = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
-  const data = useSelector(({ covidReducer }) => covidReducer);
+  const covid = useSelector(({ covidReducer }) => covidReducer);
   const name = useSelector(({ countriesReducer }) => countriesReducer).find(
     (c) => c.code.toLowerCase() === id,
   ).name.common;
@@ -19,10 +20,8 @@ const Country = () => {
     date.getMonth() + 1 > 10 ? date.getMonth() + 1 : `0${date.getMonth() + 1}`
   }-${date.getDate() > 10 ? date.getDate() : `0${date.getDate()}`}`;
 
-  // console.log(data.dates[today].countries[id]);
-
   useEffect(() => {
-    if (!data.total) {
+    if (!covid.total) {
       dispatch(fetchCovid(today, name));
     }
   }, []);
@@ -30,8 +29,29 @@ const Country = () => {
   return (
     <div className="country-page">
       <Card name={name} code={id} action={false} />
-      <p className="split">STATS BY CITIES</p>
-      {/* <div className="list">{data.dates[today].countries[id].regions}</div> */}
+      <p className="split">STATS BY COUNTRY</p>
+      {!covid.country ? (
+        <Spinner />
+      ) : (
+        <div className="list">
+          <div className="section">
+            <h4>Today Confirmed</h4>
+            <p>{covid.country.today_confirmed}</p>
+          </div>
+          <div className="section">
+            <h4>Yesterday Confirmed</h4>
+            <p>{covid.country.yesterday_confirmed}</p>
+          </div>
+          <div className="section">
+            <h4>Today Deaths</h4>
+            <p>{covid.country.today_deaths}</p>
+          </div>
+          <div className="section">
+            <h4>Yesterday Deaths</h4>
+            <p>{covid.country.yesterday_deaths}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
