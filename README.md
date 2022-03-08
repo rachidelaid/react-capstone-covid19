@@ -5,7 +5,9 @@
 web app for showing covid 19 status by country, built using ReactJS and redux.
 the list of countries is from the [restcountries API](https://restcountries.com) and the covid data is from [Narrativa](https://covid19tracking.narrativa.com).
 
-![screenshot1](./screenshot1.png)|![screenshot2](./screenshot2.png)
+> only mobile version so far
+
+![screenshot](./screenshot.png)
 
 ## Live Link
 
