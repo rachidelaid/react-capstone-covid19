@@ -3,7 +3,7 @@ import '../styles/hero.css';
 const Hero = () => {
   const date = new Date();
   const today = `${date.getFullYear()}-${
-    date.getMonth() + 1 > 10 ? date.getMonth() + 1 : `0${date.getMonth()}`
+    date.getMonth() + 1 > 10 ? date.getMonth() + 1 : `0${date.getMonth() + 1}`
   }-${date.getDate() > 10 ? date.getDate() : `0${date.getDate()}`}`;
 
   return (
