@@ -11,6 +11,7 @@
 
 .country {
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .country .details {
@@ -49,6 +50,11 @@
   transition: all 0.2s ease-in-out;
 }
 
+.top svg {
+  width: 120px;
+  height: 120px;
+}
+
 .map svg path {
   fill: var(--pink-darker) !important;
 }
@@ -62,4 +68,11 @@
   position: absolute;
   top: 0.4rem;
   right: 0.4rem;
+}
+
+.region span {
+  color: var(--pink-darker);
+  font-weight: 900;
+  font-size: 25px;
+  margin-top: 1rem;
 }

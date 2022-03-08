@@ -12,10 +12,10 @@ const Card = ({ name, action, code }) => {
       return name.toLowerCase() === 'americas'
         ? 'america'
         : `${
-          name.toLowerCase() === 'antarctic'
-            ? 'antarctica'
-            : name.toLowerCase()
-        }`;
+            name.toLowerCase() === 'antarctic'
+              ? 'antarctica'
+              : name.toLowerCase()
+          }`;
     }
 
     return code.toLowerCase();
@@ -24,14 +24,17 @@ const Card = ({ name, action, code }) => {
     const link = `https://raw.githubusercontent.com/rachidelaid/worldMaps/main/maps/${getCode()}/vector.svg`;
     const resp = await fetch(link);
     const svg = await resp.text();
-    map.current.innerHTML = svg;
+    map.current.innerHTML = svg.includes('svg') ? svg : '<span>NO MAP</span>';
   };
 
   useEffect(() => {
     getMap();
   }, []);
   return (
-    <div className={`region ${!code ? name : 'country'}`} key={name}>
+    <div
+      className={`region ${!code ? name : 'country'} ${action ? '' : 'top'}`}
+      key={name}
+    >
       <div ref={map} className="map" />
       <div className="details">
         <p className="title">{name}</p>

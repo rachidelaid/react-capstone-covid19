@@ -24,7 +24,7 @@ const Region = () => {
                 action
               />
             </Link>
-            {countries[index * 2 + 1] && (
+            {countries[index * 2 + 1] ? (
               <Link
                 to={`/country/${countries[index * 2 + 1].code.toLowerCase()}`}
               >
@@ -34,6 +34,8 @@ const Region = () => {
                   action
                 />
               </Link>
+            ) : (
+              <div />
             )}
           </div>
         ))}

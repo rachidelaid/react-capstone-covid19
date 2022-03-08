@@ -14,7 +14,7 @@
 }
 
 .region-page .row:nth-child(even) a:first-child .region {
-  background-color: var(--pink-light) !important;
+  background-color: var(--pink-light);
 }
 
 .region-page .row:nth-child(even) a:last-child .region {
