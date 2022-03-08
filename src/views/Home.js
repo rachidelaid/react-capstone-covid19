@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/home.css';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
@@ -29,7 +30,9 @@ const Home = () => {
       </div>
       <div className="regions">
         {arr.map((region) => (
-          <Card key={region} name={region} count={150} />
+          <Link key={region} to={`/region/${region.toLocaleLowerCase()}`}>
+            <Card name={region} count={150} action />
+          </Link>
         ))}
       </div>
     </div>
