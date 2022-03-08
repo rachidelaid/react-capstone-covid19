@@ -12,9 +12,9 @@ const Country = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
   const covid = useSelector(({ covidReducer }) => covidReducer);
-  const name = useSelector(({ countriesReducer }) => countriesReducer).find(
-    (c) => c.code.toLowerCase() === id,
-  ).name.common;
+  const { name, region } = useSelector(
+    ({ countriesReducer }) => countriesReducer,
+  ).find((c) => c.code.toLowerCase() === id);
 
   const date = new Date();
   const today = `${date.getFullYear()}-${
@@ -23,15 +23,15 @@ const Country = () => {
 
   useEffect(() => {
     if (!covid.country) {
-      dispatch(fetchCovid(today, id === 'us' ? 'US' : name));
+      dispatch(fetchCovid(today, id === 'us' ? 'US' : name.common));
     }
   }, []);
 
   return (
     <>
-      <Nav title={name} />
+      <Nav title={name.common} link={`/region/${region.toLowerCase()}`} />
       <div className="country-page">
-        <Card name={name} code={id} action={false} />
+        <Card name={name.common} code={id} action={false} />
         <p className="split">STATS BY COUNTRY</p>
         {!covid.country ? (
           <Spinner />

@@ -50,9 +50,22 @@
   transition: all 0.2s ease-in-out;
 }
 
+.top {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.top .details {
+  width: unset;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 900;
+}
+
 .top svg {
   width: 120px;
   height: 120px;
+  cursor: auto;
 }
 
 .map svg path {

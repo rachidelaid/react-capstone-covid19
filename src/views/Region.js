@@ -13,7 +13,7 @@ const Region = () => {
 
   return (
     <>
-      <Nav title={id} />
+      <Nav title={id} link="/" />
       <div className="region-page">
         <Card name={id} action={false} />
         <p className="split">STATS BY COUNTRY</p>

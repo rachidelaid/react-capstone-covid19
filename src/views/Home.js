@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <>
-      <Nav title="today's status" />
+      <Nav title="today's status" link="/" />
       <div className="home">
         <Hero />
         <p className="split">TOTAL STATS</p>

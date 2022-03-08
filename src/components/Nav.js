@@ -1,14 +1,17 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import '../styles/nav.css';
 
-const Nav = ({ title }) => (
+const Nav = ({ title, link }) => (
   <nav className="navbar">
-    <svg viewBox="0 0 24 24">
-      <path
-        fill="currentColor"
-        d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
-      />
-    </svg>
+    <Link to={link}>
+      <svg viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+        />
+      </svg>
+    </Link>
     <p>{title}</p>
     <svg viewBox="0 0 24 24">
       <path
@@ -21,6 +24,7 @@ const Nav = ({ title }) => (
 
 Nav.propTypes = {
   title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default Nav;
