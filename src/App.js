@@ -6,6 +6,8 @@ import Nav from './components/Nav';
 import { fetchCountries } from './redux/countries';
 import Home from './views/Home';
 import Region from './views/Region';
+import Country from './views/Country';
+import Spinner from './components/Spinner';
 
 const App = () => {
   const countries = useSelector(({ countriesReducer }) => countriesReducer);
@@ -19,13 +21,18 @@ const App = () => {
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/region/:id" element={<Region />} />
-        </Routes>
-      </BrowserRouter>
+      {!countries.length ? (
+        <Spinner />
+      ) : (
+        <BrowserRouter>
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/region/:id" element={<Region />} />
+            <Route path="/country/:id" element={<Country />} />
+          </Routes>
+        </BrowserRouter>
+      )}
     </div>
   );
 };

@@ -12,10 +12,10 @@ const Card = ({ name, action, code }) => {
       return name.toLowerCase() === 'americas'
         ? 'america'
         : `${
-            name.toLowerCase() === 'antarctic'
-              ? 'antarctica'
-              : name.toLowerCase()
-          }`;
+          name.toLowerCase() === 'antarctic'
+            ? 'antarctica'
+            : name.toLowerCase()
+        }`;
     }
 
     return code.toLowerCase();
