@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import '../styles/card.css';
 
 const Card = ({ name, count }) => {
-  const [svg, setSvg] = useState('');
+  const map = useRef('');
   const getMap = async () => {
     const resp = await fetch(
       `https://raw.githubusercontent.com/rachidelaid/worldMaps/main/maps/${
@@ -11,7 +11,7 @@ const Card = ({ name, count }) => {
       }/vector.svg`,
     );
     const svg = await resp.text();
-    setSvg({ __html: svg });
+    map.current.innerHTML = svg;
   };
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Card = ({ name, count }) => {
   }, []);
   return (
     <div className={`region ${name}`} key={name}>
-      {svg && <div className="map" dangerouslySetInnerHTML={svg} />}
+      <div ref={map} className="map" />
       <div>
         <p className="title">{name}</p>
         <small>{`${count} countries`}</small>
