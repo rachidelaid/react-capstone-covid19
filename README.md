@@ -9,6 +9,10 @@ the list of countries is from the [restcountries API](https://restcountries.com)
 
 ![screenshot](./screenshot.png)
 
+## Presentation Video
+
+I have a recorded a video to describe what I have built, you can watch it [here](https://www.loom.com/share/8bbece362a6a4af4940bb9a7b01c03ed).
+
 ## Live Link
 
 In the following link, you can view the [web app](https://capstone-covid.netlify.app/).
