@@ -1,0 +1,22 @@
+.home .split {
+  padding: 0.2rem 0.4rem;
+  background-color: var(--pink-dark);
+}
+
+.stats {
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.regions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title {
+  background-color: transparent;
+  padding: 0;
+  font-weight: 700;
+  text-transform: capitalize;
+}

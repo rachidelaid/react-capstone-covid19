@@ -1,0 +1,18 @@
+.country-page .split {
+  padding: 0.2rem 0.4rem;
+  background-color: var(--pink-dark);
+}
+
+.country-page .list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.country-page .section {
+  padding: 2.65rem 0.4rem;
+  text-align: center;
+}
+
+.country-page .light {
+  background-color: var(--pink-light);
+}

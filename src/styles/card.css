@@ -1,0 +1,91 @@
+.region {
+  height: 100%;
+  padding: 1.3rem 0.4rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--pink-light);
+}
+
+.country {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.country .details {
+  width: 100%;
+  text-align: end;
+  font-weight: 900;
+  padding-left: 2rem;
+}
+
+.Africa,
+.Europe,
+.Asia {
+  background-color: var(--pink-dark);
+}
+
+.map svg {
+  width: 80px;
+  height: 80px;
+  transition: all 0.2s ease-in-out;
+}
+
+.top svg {
+  width: 120px;
+  height: 120px;
+  cursor: auto;
+}
+
+.region:hover .map svg {
+  transform: scale(1.1);
+}
+
+.region .title {
+  background-color: transparent;
+  padding: 0;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.region div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.top {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.top .details {
+  width: unset;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.map svg path {
+  fill: var(--pink-darker) !important;
+}
+
+#Copyright {
+  display: none;
+}
+
+.icon {
+  width: 20px;
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+
+.region span {
+  color: var(--pink-darker);
+  font-weight: 900;
+  font-size: 25px;
+  margin-top: 1rem;
+}

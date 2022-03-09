@@ -1,0 +1,30 @@
+.region-page .split {
+  padding: 0.2rem 0.4rem;
+  background-color: var(--pink-dark);
+}
+
+.region-page .list {
+  display: flex;
+  flex-direction: column;
+}
+
+.region-page .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.region-page .row:nth-child(even) a:first-child .region {
+  background-color: var(--pink-light);
+}
+
+.region-page .row:nth-child(even) a:last-child .region {
+  background-color: var(--pink-dark);
+}
+
+.region-page .row:nth-child(odd) a:first-child .region {
+  background-color: var(--pink-dark);
+}
+
+.region-page .row:nth-child(odd) a:last-child .region {
+  background-color: var(--pink-light);
+}
