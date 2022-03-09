@@ -30,7 +30,7 @@ const Country = () => {
   return (
     <>
       <Nav title={name.common} link={`/region/${region.toLowerCase()}`} />
-      <div className="country-page">
+      <div className="country-page" data-testid="country">
         <Card name={name.common} code={id} action={false} />
         <p className="split">STATS BY COUNTRY</p>
         {!covid.country ? (

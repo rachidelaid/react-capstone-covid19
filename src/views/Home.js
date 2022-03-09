@@ -36,7 +36,11 @@ const Home = () => {
         </div>
         <div className="regions">
           {arr.map((region) => (
-            <Link key={region} to={`/region/${region.toLocaleLowerCase()}`}>
+            <Link
+              key={region}
+              data-testid={region}
+              to={`/region/${region.toLocaleLowerCase()}`}
+            >
               <Card name={region} code="" action />
             </Link>
           ))}

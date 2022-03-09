@@ -1,0 +1,673 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`integration tests Europe card should be rendered 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="App"
+      >
+        <nav
+          class="navbar"
+        >
+          <a
+            href="/"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <p>
+            today's status
+          </p>
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z"
+              fill="currentColor"
+            />
+          </svg>
+        </nav>
+        <div
+          class="home"
+        >
+          <div
+            class="hero-wrapper"
+          >
+            <div
+              class="hero"
+            >
+              <div
+                class="content"
+              >
+                <h2>
+                  2022-03-09
+                </h2>
+                <p>
+                  STATS
+                </p>
+              </div>
+              <svg
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.03 12C20.03 7.59 16.41 3.97 12 3.97C7.59 3.97 3.97 7.59 3.97 12C3.97 16.41 7.59 20.03 12 20.03C16.41 20.03 20.03 16.41 20.03 12M22 12C22 17.54 17.54 22 12 22C6.46 22 2 17.54 2 12C2 6.46 6.46 2 12 2C17.54 2 22 6.46 22 12M13.54 13V16L17.5 12L13.54 8V11H6.5V13"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+          <p
+            class="split"
+          >
+            TOTAL STATS
+          </p>
+          <div
+            class="stats"
+          >
+            <div>
+              <p
+                class="title"
+              >
+                Today Confirmed
+              </p>
+              <small>
+                347629
+              </small>
+            </div>
+            <div>
+              <p
+                class="title"
+              >
+                Today Deaths
+              </p>
+              <small>
+                15038
+              </small>
+            </div>
+            <div>
+              <p
+                class="title"
+              >
+                Yesterday Confirmed
+              </p>
+              <small>
+                313862
+              </small>
+            </div>
+            <div>
+              <p
+                class="title"
+              >
+                Yesterday Deaths
+              </p>
+              <small>
+                13246
+              </small>
+            </div>
+          </div>
+          <div
+            class="regions"
+          >
+            <a
+              data-testid="Americas"
+              href="/region/americas"
+            >
+              <div
+                class="region Americas "
+              >
+                <div
+                  class="map"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    
+
+                    <path
+                      d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"
+                      fill="currentColor"
+                    />
+                    
+
+                  </svg>
+                </div>
+                <div
+                  class="details"
+                >
+                  <p
+                    class="title"
+                  >
+                    Americas
+                  </p>
+                  <small>
+                    2 countries
+                  </small>
+                </div>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.03 12C20.03 7.59 16.41 3.97 12 3.97C7.59 3.97 3.97 7.59 3.97 12C3.97 16.41 7.59 20.03 12 20.03C16.41 20.03 20.03 16.41 20.03 12M22 12C22 17.54 17.54 22 12 22C6.46 22 2 17.54 2 12C2 6.46 6.46 2 12 2C17.54 2 22 6.46 22 12M13.54 13V16L17.5 12L13.54 8V11H6.5V13"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a
+              data-testid="Europe"
+              href="/region/europe"
+            >
+              <div
+                class="region Europe "
+              >
+                <div
+                  class="map"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    
+
+                    <path
+                      d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"
+                      fill="currentColor"
+                    />
+                    
+
+                  </svg>
+                </div>
+                <div
+                  class="details"
+                >
+                  <p
+                    class="title"
+                  >
+                    Europe
+                  </p>
+                  <small>
+                    1 countries
+                  </small>
+                </div>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.03 12C20.03 7.59 16.41 3.97 12 3.97C7.59 3.97 3.97 7.59 3.97 12C3.97 16.41 7.59 20.03 12 20.03C16.41 20.03 20.03 16.41 20.03 12M22 12C22 17.54 17.54 22 12 22C6.46 22 2 17.54 2 12C2 6.46 6.46 2 12 2C17.54 2 22 6.46 22 12M13.54 13V16L17.5 12L13.54 8V11H6.5V13"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <a
+              data-testid="Oceania"
+              href="/region/oceania"
+            >
+              <div
+                class="region Oceania "
+              >
+                <div
+                  class="map"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    
+
+                    <path
+                      d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"
+                      fill="currentColor"
+                    />
+                    
+
+                  </svg>
+                </div>
+                <div
+                  class="details"
+                >
+                  <p
+                    class="title"
+                  >
+                    Oceania
+                  </p>
+                  <small>
+                    1 countries
+                  </small>
+                </div>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20.03 12C20.03 7.59 16.41 3.97 12 3.97C7.59 3.97 3.97 7.59 3.97 12C3.97 16.41 7.59 20.03 12 20.03C16.41 20.03 20.03 16.41 20.03 12M22 12C22 17.54 17.54 22 12 22C6.46 22 2 17.54 2 12C2 6.46 6.46 2 12 2C17.54 2 22 6.46 22 12M13.54 13V16L17.5 12L13.54 8V11H6.5V13"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="App"
+    >
+      <nav
+        class="navbar"
+      >
+        <a
+          href="/"
+        >
+          <svg
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+        <p>
+          today's status
+        </p>
+        <svg
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z"
+            fill="currentColor"
+          />
+        </svg>
+      </nav>
+      <div
+        class="home"
+      >
+        <div
+          class="hero-wrapper"
+        >
+          <div
+            class="hero"
+          >
+            <div
+              class="content"
+            >
+              <h2>
+                2022-03-09
+              </h2>
+              <p>
+                STATS
+              </p>
+            </div>
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.03 12C20.03 7.59 16.41 3.97 12 3.97C7.59 3.97 3.97 7.59 3.97 12C3.97 16.41 7.59 20.03 12 20.03C16.41 20.03 20.03 16.41 20.03 12M22 12C22 17.54 17.54 22 12 22C6.46 22 2 17.54 2 12C2 6.46 6.46 2 12 2C17.54 2 22 6.46 22 12M13.54 13V16L17.5 12L13.54 8V11H6.5V13"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+        <p
+          class="split"
+        >
+          TOTAL STATS
+        </p>
+        <div
+          class="stats"
+        >
+          <div>
+            <p
+              class="title"
+            >
+              Today Confirmed
+            </p>
+            <small>
+              347629
+            </small>
+          </div>
+          <div>
+            <p
+              class="title"
+            >
+              Today Deaths
+            </p>
+            <small>
+              15038
+            </small>
+          </div>
+          <div>
+            <p
+              class="title"
+            >
+              Yesterday Confirmed
+            </p>
+            <small>
+              313862
+            </small>
+          </div>
+          <div>
+            <p
+              class="title"
+            >
+              Yesterday Deaths
+            </p>
+            <small>
+              13246
+            </small>
+          </div>
+        </div>
+        <div
+          class="regions"
+        >
+          <a
+            data-testid="Americas"
+            href="/region/americas"
+          >
+            <div
+              class="region Americas "
+            >
+              <div
+                class="map"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                >
+                  
+
+                  <path
+                    d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"
+                    fill="currentColor"
+                  />
+                  
+
+                </svg>
+              </div>
+              <div
+                class="details"
+              >
+                <p
+                  class="title"
+                >
+                  Americas
+                </p>
+                <small>
+                  2 countries
+                </small>
+              </div>
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.03 12C20.03 7.59 16.41 3.97 12 3.97C7.59 3.97 3.97 7.59 3.97 12C3.97 16.41 7.59 20.03 12 20.03C16.41 20.03 20.03 16.41 20.03 12M22 12C22 17.54 17.54 22 12 22C6.46 22 2 17.54 2 12C2 6.46 6.46 2 12 2C17.54 2 22 6.46 22 12M13.54 13V16L17.5 12L13.54 8V11H6.5V13"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            data-testid="Europe"
+            href="/region/europe"
+          >
+            <div
+              class="region Europe "
+            >
+              <div
+                class="map"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                >
+                  
+
+                  <path
+                    d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"
+                    fill="currentColor"
+                  />
+                  
+
+                </svg>
+              </div>
+              <div
+                class="details"
+              >
+                <p
+                  class="title"
+                >
+                  Europe
+                </p>
+                <small>
+                  1 countries
+                </small>
+              </div>
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.03 12C20.03 7.59 16.41 3.97 12 3.97C7.59 3.97 3.97 7.59 3.97 12C3.97 16.41 7.59 20.03 12 20.03C16.41 20.03 20.03 16.41 20.03 12M22 12C22 17.54 17.54 22 12 22C6.46 22 2 17.54 2 12C2 6.46 6.46 2 12 2C17.54 2 22 6.46 22 12M13.54 13V16L17.5 12L13.54 8V11H6.5V13"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            data-testid="Oceania"
+            href="/region/oceania"
+          >
+            <div
+              class="region Oceania "
+            >
+              <div
+                class="map"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                >
+                  
+
+                  <path
+                    d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"
+                    fill="currentColor"
+                  />
+                  
+
+                </svg>
+              </div>
+              <div
+                class="details"
+              >
+                <p
+                  class="title"
+                >
+                  Oceania
+                </p>
+                <small>
+                  1 countries
+                </small>
+              </div>
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.03 12C20.03 7.59 16.41 3.97 12 3.97C7.59 3.97 3.97 7.59 3.97 12C3.97 16.41 7.59 20.03 12 20.03C16.41 20.03 20.03 16.41 20.03 12M22 12C22 17.54 17.54 22 12 22C6.46 22 2 17.54 2 12C2 6.46 6.46 2 12 2C17.54 2 22 6.46 22 12M13.54 13V16L17.5 12L13.54 8V11H6.5V13"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`integration tests should render App 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="App"
+      >
+        <div
+          class="spinner"
+          data-testid="spinner"
+        >
+          <div
+            class="lds-roller"
+          >
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="App"
+    >
+      <div
+        class="spinner"
+        data-testid="spinner"
+      >
+        <div
+          class="lds-roller"
+        >
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

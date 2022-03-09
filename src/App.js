@@ -31,7 +31,7 @@ const App = () => {
 
   return (
     <div className="App">
-      {!countries.length ? (
+      {!countries.length || !covid.total ? (
         <Spinner />
       ) : (
         <BrowserRouter>

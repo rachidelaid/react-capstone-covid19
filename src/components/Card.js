@@ -24,7 +24,10 @@ const Card = ({ name, action, code }) => {
     const link = `https://raw.githubusercontent.com/rachidelaid/worldMaps/main/maps/${getCode()}/vector.svg`;
     const resp = await fetch(link);
     const svg = await resp.text();
-    map.current.innerHTML = svg.includes('svg') ? svg : '<span>NO MAP</span>';
+
+    if (map.current && svg.includes('svg')) {
+      map.current.innerHTML = svg;
+    }
   };
 
   useEffect(() => {
@@ -35,7 +38,9 @@ const Card = ({ name, action, code }) => {
       className={`region ${!code ? name : 'country'} ${action ? '' : 'top'}`}
       key={name}
     >
-      <div ref={map} className="map" />
+      <div ref={map} className="map">
+        <span>NO MAP</span>
+      </div>
       <div className="details">
         <p className="title">{name}</p>
         {!code && (

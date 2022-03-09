@@ -15,7 +15,7 @@ const Region = () => {
     <>
       <Nav title={id} link="/" />
       <div className="region-page">
-        <Card name={id} action={false} />
+        <Card name={id} action={false} code="" />
         <p className="split">STATS BY COUNTRY</p>
         <div className="list">
           {[...Array(Math.ceil(countries.length / 2)).keys()].map((index) => (
