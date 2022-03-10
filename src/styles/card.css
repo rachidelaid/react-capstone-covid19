@@ -89,3 +89,33 @@
   font-size: 25px;
   margin-top: 1rem;
 }
+
+.region-split {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .Asia {
+    background-color: var(--pink-light);
+  }
+
+  .Antarctic {
+    background-color: var(--pink-dark);
+  }
+
+  .region-split {
+    display: block;
+    border: 5px solid var(--pink-darker);
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .region {
+    padding: 1.6rem 0.4rem;
+  }
+
+  .map svg {
+    width: 100px;
+    height: 100px;
+  }
+}

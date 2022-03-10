@@ -20,3 +20,19 @@
   font-weight: 700;
   text-transform: capitalize;
 }
+
+@media (min-width: 700px) {
+  .headline {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .regions {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

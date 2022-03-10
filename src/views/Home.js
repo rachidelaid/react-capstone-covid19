@@ -14,26 +14,31 @@ const Home = () => {
     <>
       <Nav title="today's status" link="/" />
       <div className="home">
-        <Hero />
-        <p className="split">TOTAL STATS</p>
-        <div className="stats">
-          <div>
-            <p className="title">Today Confirmed</p>
-            <small>{covid.total.today_confirmed}</small>
-          </div>
-          <div>
-            <p className="title">Today Deaths</p>
-            <small>{covid.total.today_deaths}</small>
-          </div>
-          <div>
-            <p className="title">Yesterday Confirmed</p>
-            <small>{covid.total.yesterday_confirmed}</small>
-          </div>
-          <div>
-            <p className="title">Yesterday Deaths</p>
-            <small>{covid.total.yesterday_deaths}</small>
+        <div className="headline">
+          <Hero />
+          <div className="stats-wrap">
+            <p className="split">TOTAL STATS</p>
+            <div className="stats">
+              <div>
+                <p className="title">Today Confirmed</p>
+                <small>{covid.total.today_confirmed}</small>
+              </div>
+              <div>
+                <p className="title">Today Deaths</p>
+                <small>{covid.total.today_deaths}</small>
+              </div>
+              <div>
+                <p className="title">Yesterday Confirmed</p>
+                <small>{covid.total.yesterday_confirmed}</small>
+              </div>
+              <div>
+                <p className="title">Yesterday Deaths</p>
+                <small>{covid.total.yesterday_deaths}</small>
+              </div>
+            </div>
           </div>
         </div>
+        <p className="split region-split">SELECT BY REGION</p>
         <div className="regions">
           {arr.map((region) => (
             <Link
