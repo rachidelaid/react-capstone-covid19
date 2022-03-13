@@ -23,8 +23,7 @@ const initialState = [];
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_COUNTRIES:
-      return action.payload.map((c) => c.code !== 'IL');
-
+      return action.payload.filter((c) => c.code !== 'IL');
     default:
       return state;
   }
